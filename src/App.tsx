@@ -1,7 +1,10 @@
-import { AboutMe } from "./components/AboutMe";
 import { Header } from "./components/Header";
 
 import { Hero } from "./components/Hero";
+
+import { AboutMe } from "./components/AboutMe";
+
+import { Experience } from "./components/Experience";
 
 export function App() {
   return (
@@ -9,6 +12,7 @@ export function App() {
       <Header />
       <Hero />
       <AboutMe />
+      <Experience />
     </div>
   )
 }

@@ -15,3 +15,22 @@ body {
   background: #000000;
   font-family: var(--font-primary);
 }
+
+.control-arrow {
+  display: none;
+}
+
+.carousel-status {
+  display: none;
+}
+
+.carousel-slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.control-dots {
+  position: relative !important;
+  margin: 14px 0 0 0 !important;
+}
