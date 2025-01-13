@@ -2,7 +2,7 @@ import Me from "../../assets/me.jpg";
 
 export function Hero() {
   return (
-    <div className="w-full flex items-center justify-center pt-[130px] px-[20px]  lg:pt-[200px]">
+    <div className="w-full flex items-center justify-center pt-[130px] px-[20px] lg:pt-[200px]">
       <div className="max-w-[1220px] m-auto flex flex-col items-center justify-center">
         <img
           src={Me}
