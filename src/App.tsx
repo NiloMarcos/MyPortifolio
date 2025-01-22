@@ -6,6 +6,8 @@ import { AboutMe } from "./components/AboutMe";
 
 import { Experience } from "./components/Experience";
 
+import { Skills } from "./components/Skills";
+
 export function App() {
   return (
     <div className="bg-[url('./src/assets/BackgroundPattern.svg')] bg-no-repeat bg-right">
@@ -13,6 +15,7 @@ export function App() {
       <Hero />
       <AboutMe />
       <Experience />
+      <Skills />
     </div>
   )
 }
