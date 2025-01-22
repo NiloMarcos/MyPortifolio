@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { Carousel } from 'react-responsive-carousel';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -68,15 +70,29 @@ export function Experience() {
   ];
 
   return (
-    <div className="flex items-center justify-center flex-col mt-[60px] px-[20px] lg:mt-[105px] max-w-[800px] mx-auto">
-      <p className="text-[20px] font-extrabold text-[white] font-[inter] uppercase lg:text-[40px] leading-none">
+    <div className="flex items-center justify-center flex-col w-full max-w-[1200px] mx-auto mt-[60px] px-[20px] lg:mt-[105px]">
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-[20px] font-extrabold text-[white] font-[inter] uppercase lg:text-[40px] leading-none">
         Experience
-      </p>
-      <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#9C83FF] via-[#9C83FF] to-[#FF9051] text-[14px] font-semibold uppercase">
+      </motion.p>
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="text-transparent bg-clip-text bg-gradient-to-r from-[#9C83FF] via-[#9C83FF] to-[#FF9051] text-[14px] font-semibold uppercase"
+      >
         Explore now
-      </p>
+      </motion.p>
 
-      <div className="mt-[30px] lg:mt-[55px] max-w-[800px]">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="mt-[30px] lg:mt-[55px] max-w-[1200px]"
+      >
         <Carousel
           emulateTouch={true}
         >
@@ -116,7 +132,7 @@ export function Experience() {
             );
           })}
         </Carousel>
-      </div>
+      </motion.div>
     </div>
   );
 }

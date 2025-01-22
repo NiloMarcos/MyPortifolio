@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import {
   FaHtml5,
   FaReact,
@@ -18,14 +20,29 @@ import { RiNextjsFill } from "react-icons/ri";
 
 export function Skills() {
   return (
-    <div className="flex flex-col items-center mt-10 mb-10">
-      <p className="text-2xl font-extrabold text-white uppercase">
+    <div className="flex flex-col items-center mb-10 w-full max-w-[1200px] mx-auto mt-[60px] px-[20px]">
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8}}
+        className="text-2xl font-extrabold text-white uppercase">
         Conhecimentos
-      </p>
-      <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-orange-500 text-sm font-semibold uppercase">
+      </motion.p>
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-orange-500 text-sm font-semibold uppercase"
+      >
         Tecnologias
-      </p>
-      <div className="grid grid-cols-3 gap-6 mt-6 lg:grid-cols-5">
+      </motion.p>
+      
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="grid grid-cols-3 gap-6 mt-6 lg:grid-cols-5"
+      >
         {[
           { icon: <FaHtml5 size={30} color="#FFF" />, name: "HTML5" },
           { icon: <FaCss3 size={30} color="#FFF" />, name: "CSS3" },
@@ -41,17 +58,17 @@ export function Skills() {
           { icon: <SiVtex size={30} color="#FFF" />, name: "VTEX" },
           { icon: <FaGithub size={30} color="#FFF" />, name: "GitHub" },
         ].map((skill, index) => (
-          <div
+          <motion.div
             key={index}
             className="flex flex-col items-center space-y-2 hover:scale-105 transition-transform"
           >
-            <div className="border border-white p-3 rounded-full">
+            <motion.div className="border border-white p-3 rounded-full">
               {skill.icon}
-            </div>
-            <span className="text-white text-sm font-medium">{skill.name}</span>
-          </div>
+            </motion.div>
+            <motion.span className="text-white text-sm font-medium">{skill.name}</motion.span>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
