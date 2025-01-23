@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import Logo from '../../assets/Logo.svg';
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -30,7 +32,7 @@ export function Header() {
     >
       <div className="max-w-[1220px] m-auto py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <img src="/Logo.svg" alt="Logo do site" className="h-10" />
+          <img src={Logo} alt="Logo do site" className="h-10" />
           <div>
             <p className="text-white text-lg lg:text-[22px] font-bold">
               Nilo Marcos De Freitas
