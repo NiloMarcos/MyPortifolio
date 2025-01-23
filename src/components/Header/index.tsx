@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react";
 
-import { CgClose } from "react-icons/cg";
-
-import { FiAlignRight } from "react-icons/fi";
-
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const menuLinks = [
+    { id: 1, title: "Início", link: "#hero" },
+    { id: 2, title: "Sobre mim", link: "#about" },
+    { id: 3, title: "Conhecimentos", link: "#skills" },
+    { id: 4, title: "Experiências", link: "#experiencies" },
+    { id: 5, title: "Projetos", link: "#projects" },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,44 +43,21 @@ export function Header() {
 
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-2 lg:gap-[10px]">
-            {["Início", "Sobre mim", "Experiência", "Projetos", "Contatos"].map((item) => (
+            {menuLinks.map((item) => (
               <li
-                key={item}
+                key={item.id}
                 className="border-b-2 border-[#9A9A9A] flex items-center justify-center h-[35px] w-[96px]"
               >
-                <a href="#" className="text-[13px] font-medium text-[#E1E1E1]">
-                  {item}
+                <a href={item.link} className="text-[13px] font-medium text-[#E1E1E1]">
+                  {item.title}
                 </a>
               </li>
             ))}
           </ul>
         </nav>
-
-        <button
-          onClick={toggleMenu}
-          onBlur={() => setIsMenuOpen(false)}
-          className="lg:hidden rounded-md text-white"
-        >
-          {isMenuOpen ? <CgClose size={30} /> : <FiAlignRight size={30} />}
-        </button>
       </div>
 
-      {isMenuOpen && (
-        <nav className="lg:hidden bg-gray-800 p-4 mt-2">
-          <ul className="flex flex-col gap-4">
-            {["Início", "Sobre mim", "Experiência", "Projetos", "Contatos"].map((item) => (
-              <li
-                key={item}
-                className="border-b border-[#9A9A9A] rounded-lg flex items-center justify-center h-[35px]"
-              >
-                <a href="#" className="text-[13px] font-medium text-[#E1E1E1]">
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      
     </header>
   );
 }

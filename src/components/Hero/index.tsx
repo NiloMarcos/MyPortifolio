@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 
 export function Hero() {
   return (
-    <div className="w-full flex items-center justify-center max-w-[1200px] mx-auto mt-[60px] px-[20px]">
+    <div className="w-full flex items-center justify-center max-w-[1200px] mx-auto mt-[60px] px-[20px]" id="hero">
       <motion.div
         className="w-full max-w-[1220px] m-auto flex flex-col items-center justify-center"
         initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export function Hero() {
           Desenvolvedor Front-end / Desenvolvedor Mobile
         </motion.p>
         <motion.span
-          className="w-full text-[14px] font-medium text-[#E1E1E1] mt-[21px] text-center lg:text-[16px]"
+          className="w-full text-[14px] font-medium text-[#E1E1E1] mt-[21px] text-justify sm:text-center lg:text-[16px]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
