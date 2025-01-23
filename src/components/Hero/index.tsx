@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 
 import Me from "../../assets/me.jpg";
 
-import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+import CV from "../../assets/CV.pdf";
+
+import { FaGithub, FaLinkedin, FaCode, FaWhatsapp } from "react-icons/fa";
 
 export function Hero() {
   return (
@@ -61,13 +63,19 @@ export function Hero() {
               <FaLinkedin  size={20} color="#FFF" />
             </a>
 
+            <a href="https://api.whatsapp.com/send?phone=11952309205" target="_blank" className="hover:opacity-[.7] transition-opacity">
+              <FaWhatsapp size={20} color="#FFF" />
+            </a>
+
             <a href="#" target="_blank" className="hover:opacity-[.7] transition-opacity">
               <FaCode size={20} color="#FFF" />
             </a>
           </motion.div>
           
           <motion.div className="flex items-center gap-3">
-            <button
+            <a 
+              href={CV}
+              download 
               className="
                 px-[14px]
                 break-normal
@@ -87,31 +95,11 @@ export function Hero() {
                 transition-all
                 hover:bg-white
                 hover:text-[black]
-              "
-            >
-              Currículo
-            </button>
+            ">Currículo</a>
 
             <button
               className="
-                px-[14px]
-                break-normal
-                bg-[black]
-                w-full
-                max-w-[187px]
-                h-[55px]
-                flex
-                items-center
-                justify-center
-                rounded-[75px]
-                border
-                border-[#585858]
-                text-[15px]
-                font-medium
-                text-white
-                transition-all
-                hover:bg-white
-                hover:text-[black]
+
               "
             >
               Contatos

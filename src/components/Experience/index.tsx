@@ -131,7 +131,7 @@ export function Experience() {
           {jobs.map((item) => (
             <div key={item.id}>
               <div className="flex flex-col items-baseline justify-between sm:flex-row">
-                <p className="flex flex-col items-baseline mb-2 text-[18px] font-normal font-[inter] text-[#FFFFFF]  sm:flex-row ">
+                <p className="flex flex-col items-baseline mb-2 text-[18px] font-normal font-[inter] text-[#FFFFFF] sm:flex-row ">
                   <strong className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF]">
                     {item.enterprise} /{" "}
                   </strong>

@@ -9,7 +9,9 @@ export function Footer() {
         transition={{ duration: 0.8, delay: 0.4 }}
         className="text-white text-sm lg:text-[14px] font-normal"
       >
-        ©Nilo Marcos - Todos os direitos reservados.
+        <a href="https://www.linkedin.com/in/nilomarcos/" target="_blank">
+          ©Nilo Marcos De Freitas - Todos os direitos reservados.
+        </a>
       </motion.p>
     </div>
   );

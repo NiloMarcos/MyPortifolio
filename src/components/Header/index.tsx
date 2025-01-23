@@ -25,7 +25,7 @@ export function Header() {
   return (
     <header
       className={`w-full px-4 lg:px-[110px] ${
-        isScrolled ? "fixed top-0 backdrop-blur-[1px] shadow-lg" : "mt-[35px]"
+        isScrolled ? "fixed top-0 backdrop-blur-[1px] shadow-lg z-30" : "mt-[35px]"
       } transition-all duration-300`}
     >
       <div className="max-w-[1220px] m-auto py-4 flex items-center justify-between">
@@ -36,7 +36,7 @@ export function Header() {
               Nilo Marcos De Freitas
             </p>
             <p className="text-white text-sm lg:text-[14px] font-normal">
-              Front-end developer
+              Desenvolvedor Front-end
             </p>
           </div>
         </div>
@@ -56,8 +56,6 @@ export function Header() {
           </ul>
         </nav>
       </div>
-
-      
     </header>
   );
 }

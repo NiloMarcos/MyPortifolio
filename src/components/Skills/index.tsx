@@ -41,7 +41,7 @@ export function Skills() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="grid grid-cols-3 gap-6 mt-6 lg:grid-cols-5"
+        className="grid grid-cols-3 gap-6 mt-6 lg:grid-cols-5 w-full lg:max-w-[750px]"
       >
         {[
           { icon: <FaHtml5 size={30} color="#FFF" />, name: "HTML5" },
