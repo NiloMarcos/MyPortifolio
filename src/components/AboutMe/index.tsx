@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function AboutMe() {
   return (
-    <div className="flex items-center justify-center flex-col w-full max-w-[1200px] mx-auto mt-[60px] px-[20px] lg:mt-[105px]" id="about">
+    <div className="flex items-center justify-center flex-col w-full max-w-[1200px] mx-auto mt-[60px] lg:mt-[105px] px-[20px]" id="about">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

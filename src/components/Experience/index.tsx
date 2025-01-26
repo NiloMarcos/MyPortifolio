@@ -9,7 +9,7 @@ export function Experience() {
     {
       id: 1,
       enterprise: "BETC HAVAS",
-      position: "Junior Frontend Developer",
+      position: "Junior Frontend Developer - Remoto",
       time: "Jan 2022 - Abr 2022, São Paulo",
       discription: (
         <>
@@ -23,7 +23,7 @@ export function Experience() {
     {
       id: 2,
       enterprise: "Econverse",
-      position: "Junior Frontend Developer",
+      position: "Junior Frontend Developer - Híbrido",
       time: "Jun 2022 - Set 2022, São Paulo",
       discription: (
         <>
@@ -36,6 +36,7 @@ export function Experience() {
       techs: [
         { name: "HTML" },
         { name: "CSS" },
+        { name: "ReactJS" },
         { name: "TypeScript" },
         { name: "SASS" },
         { name: "GIT" },
@@ -45,7 +46,7 @@ export function Experience() {
     {
       id: 3,
       enterprise: "Cadastra",
-      position: "Junior Frontend Developer II",
+      position: "Junior Frontend Developer II - Remoto",
       time: "Out 2022 - Jun 2024, São Paulo",
       discription: (
         <>
@@ -61,6 +62,7 @@ export function Experience() {
       techs: [
         { name: "HTML" },
         { name: "CSS" },
+        { name: "ReactJS" },
         { name: "TypeScript" },
         { name: "SASS" },
         { name: "GIT" },
@@ -69,8 +71,34 @@ export function Experience() {
     },
     {
       id: 4,
+      enterprise: "BC Soberano",
+      position: "Frontend Developer - Remoto",
+      time: "Jun 2024 - Setembro, Palmas - TO",
+      discription: (
+        <>
+          Colaboro no time de projetos com foco na criação do internet bank para clientes.<br /><br />
+          Implementação da soluções como Enviar dinheiro via Pix, Qr Code, Transferência bancaria.<br /><br />
+          Implementação da soluções como Buscar boleto de transfêrencia, Baixar o PDF por data exp: 10/01 a 20/01.<br /><br />
+          Integração com a API Do Banco Central para validar as requisições do banco.<br /><br />
+          Integração com a API do banco de dados para logar o usúario ou deslogar. Assim puxar todas as informações do usuario, como Saldo, Crédito, Debitos e informações pessoais.<br /><br />
+          Implementação com base no design oferecido pela (UI / UX Design).<br /><br />
+          Participação ativa em reuniões de planejamento e definição de requisitos técnicos e
+          funcionais.
+        </>
+      ),
+      techs: [
+        { name: "HTML" },
+        { name: "CSS" },
+        { name: "NextJS" },
+        { name: "TypeScript" },
+        { name: "Tailwindcss" },
+        { name: "GIT" },
+      ],
+    },
+    {
+      id: 5,
       enterprise: "Quick Digital",
-      position: "Frontend Developer",
+      position: "Frontend Developer - Remoto",
       time: "Jun 2024 - Presente, Rio De Janeiro",
       discription: (
         <>
@@ -87,6 +115,7 @@ export function Experience() {
       techs: [
         { name: "HTML" },
         { name: "CSS" },
+        { name: "ReactJS" },
         { name: "TypeScript" },
         { name: "SASS" },
         { name: "GIT" },
@@ -96,7 +125,7 @@ export function Experience() {
   ];
 
   return (
-    <div className="flex items-center justify-center flex-col w-full max-w-[1200px] mx-auto mt-[60px] px-[20px] lg:mt-[105px]" id="experiencies">
+    <div className="flex items-center justify-center flex-col w-full max-w-[1200px] mx-auto mt-[60px] lg:mt-[105px] px-[20px]" id="experiencies">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -132,7 +161,7 @@ export function Experience() {
             <div key={item.id}>
               <div className="flex flex-col items-baseline justify-between sm:flex-row">
                 <p className="flex flex-col items-baseline mb-2 text-[18px] font-normal font-[inter] text-[#FFFFFF] sm:flex-row ">
-                  <strong className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF]">
+                  <strong className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] pr-1">
                     {item.enterprise} /{" "}
                   </strong>
                   {item.position}

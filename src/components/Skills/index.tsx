@@ -11,16 +11,14 @@ import {
 
 import { 
   SiTypescript,
-  SiStyledcomponents,
   SiVtex
-
 } from "react-icons/si";
 
-import { RiNextjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export function Skills() {
   return (
-    <div className="flex flex-col items-center mb-10 w-full max-w-[1200px] mx-auto mt-[60px] px-[20px]" id="skills">
+    <div className="flex flex-col items-center mb-10 w-full max-w-[1200px] mx-auto mt-[60px] lg:mt-[105px] px-[20px]" id="skills">
       <motion.p 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -46,17 +44,14 @@ export function Skills() {
         {[
           { icon: <FaHtml5 size={30} color="#FFF" />, name: "HTML5" },
           { icon: <FaCss3 size={30} color="#FFF" />, name: "CSS3" },
-          { icon: <FaSass size={30} color="#FFF" />, name: "SASS" },
-          {
-            icon: <SiStyledcomponents size={30} color="#FFF" />,
-            name: "Styled",
-          },
           { icon: <FaJsSquare size={30} color="#FFF" />, name: "JavaScript" },
           { icon: <SiTypescript size={30} color="#FFF" />, name: "TypeScript" },
           { icon: <FaReact size={30} color="#FFF" />, name: "React" },
           { icon: <RiNextjsFill size={30} color="#FFF" />, name: "Next.js" },
+          { icon: <FaSass size={30} color="#FFF" />, name: "SASS" },
+          { icon: <RiTailwindCssFill size={30} color="#FFF" />, name: "TailwindCSS" },
           { icon: <SiVtex size={30} color="#FFF" />, name: "VTEX" },
-          { icon: <FaGithub size={30} color="#FFF" />, name: "GitHub" },
+          { icon: <FaGithub size={30} color="#FFF" />, name: "GitHub" }
         ].map((skill, index) => (
           <motion.div
             key={index}
