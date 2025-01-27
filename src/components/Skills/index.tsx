@@ -16,7 +16,11 @@ import {
 
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
+import { useTranslation } from 'react-i18next';
+
 export function Skills() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col items-center mb-10 w-full max-w-[1200px] mx-auto mt-[60px] lg:mt-[105px] px-[20px]" id="skills">
       <motion.p 
@@ -24,7 +28,7 @@ export function Skills() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8}}
         className="text-[20px] font-extrabold text-[white] font-[inter] uppercase lg:text-[30px] leading-none">
-        Conhecimentos
+        {t('titleSkills')}
       </motion.p>
       <motion.p 
         initial={{ opacity: 0, y: 20 }}
@@ -32,7 +36,7 @@ export function Skills() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-orange-500 text-sm font-semibold uppercase"
       >
-        Techs que uso diariamente
+        {t('subTitleSkills')}
       </motion.p>
       
       <motion.div 

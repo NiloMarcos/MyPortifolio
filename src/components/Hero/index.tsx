@@ -6,7 +6,11 @@ import CV from "../../assets/CV.pdf";
 
 import { FaGithub, FaLinkedin, FaCode, FaWhatsapp } from "react-icons/fa";
 
+import { useTranslation } from 'react-i18next';
+
 export function Hero() {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full flex items-center justify-center max-w-[1200px] mx-auto mt-[60px] px-[20px]" id="hero">
       <motion.div
@@ -37,7 +41,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Desenvolvedor Front-end / Desenvolvedor Mobile
+          {t('position')}
         </motion.p>
         <motion.span
           className="w-full text-[14px] font-medium text-[#E1E1E1] mt-[21px] text-justify sm:text-center lg:text-[16px]"
@@ -45,7 +49,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          Desenvolvedor Front-end / Mobile especializado em ReactJS, React Native, Next.js e TypeScript. Focado em criar interfaces modernas, performáticas e acessíveis, entrego soluções escaláveis que proporcionam experiências excepcionais para os usuários.
+          {t('resume')}
         </motion.span>
 
         <motion.div
@@ -96,14 +100,6 @@ export function Hero() {
                 hover:bg-white
                 hover:text-[black]
             ">Currículo</a>
-
-            <button
-              className="
-
-              "
-            >
-              Contatos
-            </button>
           </motion.div>
         </motion.div>
       </motion.div>

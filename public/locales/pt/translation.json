@@ -1,0 +1,68 @@
+{
+  "menuLinks": [
+    { "id": 1, "title": "Início", "link": "#hero" },
+    { "id": 2, "title": "Sobre mim", "link": "#about" },
+    { "id": 3, "title": "Conhecimentos", "link": "#skills" },
+    { "id": 4, "title": "Experiências", "link": "#experiencies" },
+    { "id": 5, "title": "Projetos", "link": "#projects" }
+  ],
+  "headerTitle": "Desenvolvedor Front-end",
+  "position": "Desenvolvedor Front-end / Desenvolvedor Mobile",
+  "resume": "Desenvolvedor Front-end / Mobile especializado em ReactJS, React Native, Next.js e TypeScript. Focado em criar interfaces modernas, performáticas e acessíveis, entrego soluções escaláveis que proporcionam experiências excepcionais para os usuários.",
+  "titleAboutMe": "Sobre mim",
+  "subTitleAboutMe": "Conheça-me melhor",
+  "aboutMe": "Desenvolvedor Front-end com 3 anos de experiência na criação de interfaces web responsivas e dinâmicas. Sou formado em Análise e Desenvolvimento de Sistemas pela Faculdade UniFecaf, onde iniciei meus estudos e minha carreira como desenvolvedor. \n \n Durante minha carreira, já atuei em equipes remotas e híbridas, o que me permitiu aprimorar minha comunicação e trabalho em equipe. Sou detalhista e proativo, sempre em busca de soluções criativas para desafios técnicos. Além disso, valorizo o aprendizado contínuo e me dedico a me manter atualizado com as melhores práticas e tecnologias emergentes no mercado.",
+  "titleSkills": "Conhecimentos",
+  "subTitleSkills": "Techs que uso diariamente",
+  "titleExperiencies": "Expêriencias",
+  "subTitleExperiencies": "Minhas expêriencias profissionais",
+  "jobs": [
+    {
+      "id": 1,
+      "enterprise": "BETC HAVAS",
+      "position": "Desenvolvedor Front-end Junior - Remoto",
+      "time": "Jan 2022 - Abr 2022, São Paulo",
+      "description": "Colaborei no time de criação com foco em desenvolvimento de emails marketing com low code.\n\nDesenvolvimento e manutenção de emails marketing personalizados.\n\nImplementação de emails responsivos e otimizados para uma melhor experiência do usuário.",
+      "techs": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "enterprise": "Econverse",
+      "position": "Desenvolvedor Front-end Junior - Híbrido",
+      "time": "Jun 2022 - Set 2022, São Paulo",
+      "description": "Colaborei no time de projetos com foco em implementação e evolução de sites e-commerce.\n\nDesenvolvimento e manutenção de soluções personalizadas.\n\nImplementação de interfaces responsivas e otimizadas para uma melhor experiência do usuário (UX).",
+      "techs": ["HTML", "CSS", "ReactJS", "TypeScript", "SASS", "GIT", "VTEX IO"]
+    },
+    {
+      "id": 3,
+      "enterprise": "Cadastra",
+      "position": "Desenvolvedor Front-end Junior II - Remoto",
+      "time": "Out 2022 - Jun 2024, São Paulo",
+      "description": "Colaborei no time de projetos com foco em implementação e evolução de sites e-commerce, trabalhando no LATAM (Time Espanhol).\n\nDesenvolvimento e manutenção de soluções personalizadas.\n\nImplementação de interfaces responsivas e otimizadas para uma melhor experiência do usuário (UX).\n\nCorreção de bugs e melhorias contínuas para garantir alta performance e estabilidade das aplicações.\n\nParticipação ativa em reuniões de planejamento e definição de requisitos técnicos e funcionais.",
+      "techs": ["HTML", "CSS", "ReactJS", "TypeScript", "SASS", "GIT", "VTEX IO"]
+    },
+    {
+      "id": 4,
+      "enterprise": "BC Soberano",
+      "position": "Desenvolvedor Front end - Remoto",
+      "time": "Jun 2024 - Set 2024, Palmas - TO",
+      "description": "Colaboro no time de projetos com foco na criação do internet bank para clientes.\n\nImplementação de soluções como Enviar dinheiro via Pix, Qr Code, Transferência bancária.\n\nImplementação de soluções como Buscar boleto de transferência, Baixar o PDF por data (ex.: 10/01 a 20/01).\n\nIntegração com a API do Banco Central para validar as requisições do banco.\n\nIntegração com a API do banco de dados para logar o usuário ou deslogar, puxando informações como Saldo, Crédito, Débitos e dados pessoais.\n\nImplementação baseada no design oferecido pela (UI/UX Design).\n\nParticipação ativa em reuniões de planejamento e definição de requisitos técnicos e funcionais.",
+      "techs": ["HTML", "CSS", "NextJS", "TypeScript", "Tailwindcss", "GIT"]
+    },
+    {
+      "id": 5,
+      "enterprise": "Quick Digital",
+      "position": "Desenvolvedor Front-end - Remoto",
+      "time": "Jun 2024 - Presente, Rio de Janeiro",
+      "description": "Colaboro no time de projetos com foco na evolução de sites e-commerce.\n\nDesenvolvimento e manutenção de soluções personalizadas.\n\nImplementação de interfaces responsivas e otimizadas para uma melhor experiência do usuário (UX).\n\nCorreção de bugs e melhorias contínuas para garantir alta performance e estabilidade das aplicações.\n\nParticipação ativa em reuniões de planejamento e definição de requisitos técnicos e funcionais.",
+      "techs": ["HTML", "CSS", "ReactJS", "TypeScript", "SASS", "GIT", "VTEX IO / CMS"]
+    }
+  ],
+  "titleProject": "Projetos",
+  "subTitleProject": "Meus projetos - GITHUB",
+  "nameOfProject": "Em breve...",
+  "descriptionOfProject": "Pegue um cafezinho, que já estou preparando o projeto.",
+
+  "copyright": "© Nilo Marcos - Todos os direitos reservados."
+
+}

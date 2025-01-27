@@ -2,16 +2,24 @@ import { useState, useEffect } from "react";
 
 import Logo from '../../assets/Logo.svg';
 
+import { useTranslation } from 'react-i18next';
+
+interface TypeMenu {
+  id: number;
+  title: string;
+  link: string;
+}
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const menuLinks = [
-    { id: 1, title: "Início", link: "#hero" },
-    { id: 2, title: "Sobre mim", link: "#about" },
-    { id: 3, title: "Conhecimentos", link: "#skills" },
-    { id: 4, title: "Experiências", link: "#experiencies" },
-    { id: 5, title: "Projetos", link: "#projects" },
-  ]
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lang: 'en' | 'pt') => {
+    i18n.changeLanguage(lang);
+  };
+
+  const menuLinks = t("menuLinks", { returnObjects: true }) as TypeMenu[];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +31,7 @@ export function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  
   return (
     <header
       className={`w-full px-4 lg:px-[110px] ${
@@ -38,13 +46,13 @@ export function Header() {
               Nilo Marcos De Freitas
             </p>
             <p className="text-white text-sm lg:text-[14px] font-normal">
-              Desenvolvedor Front-end
+              {t('headerTitle')}
             </p>
           </div>
         </div>
 
-        <nav className="hidden lg:block">
-          <ul className="flex items-center gap-2 lg:gap-[10px]">
+        <nav className="lg:flex lg:flex-row">
+          <ul className=" hidden lg:flex items-center gap-2 lg:gap-[10px]">
             {menuLinks.map((item) => (
               <li
                 key={item.id}
@@ -56,6 +64,19 @@ export function Header() {
               </li>
             ))}
           </ul>
+          
+          <div className="max-w-max flex items-center gap-2 pl-4">
+            <select
+              onChange={(e) => {
+                const lang = e.target.value as 'en' | 'pt';
+                changeLanguage(lang);
+              }}
+              className="text-white bg-transparent border-none outline-none"
+            >
+              <option value="en" className="text-black cursor-pointer">EN</option>
+              <option value="pt" className="text-black cursor-pointer">PT</option>
+            </select>
+          </div>
         </nav>
       </div>
     </header>

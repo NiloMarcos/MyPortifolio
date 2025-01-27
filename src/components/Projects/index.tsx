@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 
 import bg from '../../assets/bg-project.png';
 
+import { useTranslation } from 'react-i18next';
+
 export function Projects() {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -15,7 +19,7 @@ export function Projects() {
       <p 
         className="text-[20px] font-extrabold text-[white] font-[inter] uppercase lg:text-[30px] leading-none"
       >
-        Projetos
+        {t('titleProject')}
       </p>
       
       <a 
@@ -23,7 +27,7 @@ export function Projects() {
         target="_blank"
         className="text-transparent bg-clip-text bg-gradient-to-r from-[#9C83FF] via-[#9C83FF] to-[#FF9051] text-[14px] font-semibold uppercase"
       >
-        Meus Projetos - GitHub
+        {t('subTitleProject')}
       </a>
 
       <motion.div
@@ -35,29 +39,29 @@ export function Projects() {
         <div className='border border-[#141414] p-4 rounded-3xl'>
           <img src={bg} alt="BG - Projeto" className='w-full rounded-3xl' />
 
-          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">Em breve...</p>
-          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>Pegue um cafezinho, que já estou preparando o projeto.</span>
+          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">{t('nameOfProject')}</p>
+          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>{t('descriptionOfProject')}</span>
         </div>
         
         <div className='border border-[#141414] p-4 rounded-3xl'>
           <img src={bg} alt="BG - Projeto" className='w-full rounded-3xl' />
 
-          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">Em breve...</p>
-          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>Pegue um cafezinho, que já estou preparando o projeto.</span>
+          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">{t('nameOfProject')}</p>
+          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>{t('descriptionOfProject')}</span>
         </div>
         
         <div className='border border-[#141414] p-4 rounded-3xl'>
           <img src={bg} alt="BG - Projeto" className='w-full rounded-3xl' />
 
-          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">Em breve...</p>
-          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>Pegue um cafezinho, que já estou preparando o projeto.</span>
+          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">{t('nameOfProject')}</p>
+          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>{t('descriptionOfProject')}</span>
         </div>
         
         <div className='border border-[#141414] p-4 rounded-3xl'>
           <img src={bg} alt="BG - Projeto" className='w-full rounded-3xl' />
 
-          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">Em breve...</p>
-          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>Pegue um cafezinho, que já estou preparando o projeto.</span>
+          <p className="text-[18px] font-extrabold font-[inter] text-[#FFFFFF] mt-6">{t('nameOfProject')}</p>
+          <span className='text-[14px] font-normal font-[inter] text-[#FFFFFF] mt-4'>{t('descriptionOfProject')}</span>
         </div>
       </motion.div>
     </motion.div>
