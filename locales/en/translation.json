@@ -1,0 +1,95 @@
+{
+  "menuLinks": [
+    { "id": 1, "title": "Home", "link": "#hero" },
+    { "id": 2, "title": "About me", "link": "#about" },
+    { "id": 3, "title": "Knowledge", "link": "#skills" },
+    { "id": 4, "title": "Experiences", "link": "#experiencies" },
+    { "id": 5, "title": "Projects", "link": "#projects" }
+  ],
+  "headerTitle": "Front-end Enginner",
+  "position": "Frontend / Mobile Enginner",
+  "resume": "Front-end / Mobile developer specialized in ReactJS, React Native, Next.js and TypeScript. Focused on creating modern, performant and accessible interfaces, I deliver scalable solutions that provide exceptional experiences for users.",
+  "titleAboutMe": "About me",
+  "subTitleAboutMe": "Get to know me better",
+  "aboutMe": "Front-end developer with 3 years of experience creating responsive and dynamic web interfaces. I have a degree in Systems Analysis and Development from Faculdade UniFecaf, where I started my studies and my career as a developer. \n \n During my career, I have been on remote and hybrid teams, which helped me improve my communication and teamwork. I am detail-oriented and proactive, always looking for creative solutions to technical challenges. Additionally, I value continuous learning and am dedicated to staying up to date with best practices and emerging technologies on the market.",
+  "titleSkills": "Knowledge",
+  "subTitleSkills": "Techs I use daily",
+  "titleExperiencies": "Experiences",
+  "subTitleExperiencies": "My professional experiences",
+  "jobs": [
+    {
+      "id": 1,
+      "enterprise": "BETC HAVAS",
+      "position": "Junior Frontend Developer - Remote",
+      "time": "Jan 2022 - Apr 2022, São Paulo",
+      "description": "Collaborated with the creative team, focusing on the development of low-code marketing emails.\n\nDeveloped and maintained customized marketing emails.\n\nImplemented responsive and optimized emails for an enhanced user experience.",
+      "techs": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "enterprise": "Econverse",
+      "position": "Junior Frontend Developer - Hybrid",
+      "time": "Jun 2022 - Sep 2022, São Paulo",
+      "description": "Collaborated with the projects team, focusing on the implementation and enhancement of e-commerce websites.\n\nDeveloped and maintained customized solutions.\n\nImplemented responsive and optimized interfaces for an improved user experience (UX).",
+      "techs": [
+        "HTML",
+        "CSS",
+        "ReactJS",
+        "TypeScript",
+        "SASS",
+        "GIT",
+        "VTEX IO"
+      ]
+    },
+    {
+      "id": 3,
+      "enterprise": "Cadastra",
+      "position": "Junior Frontend Developer II - Remote",
+      "time": "Oct 2022 - Jun 2024, São Paulo",
+      "description": "Collaborated with the projects team, focusing on the implementation and enhancement of e-commerce websites, working in the LATAM (Spanish-speaking team).\n\nDeveloped and maintained customized solutions.\n\nImplemented responsive and optimized interfaces for an improved user experience (UX).\n\nFixed bugs and continuously improved to ensure high performance and application stability.\n\nActively participated in planning meetings and defined technical and functional requirements.",
+      "techs": [
+        "HTML",
+        "CSS",
+        "ReactJS",
+        "TypeScript",
+        "SASS",
+        "GIT",
+        "VTEX IO"
+      ]
+    },
+    {
+      "id": 4,
+      "enterprise": "BC Soberano",
+      "position": "Frontend Developer - Remote",
+      "time": "Jun 2024 - Sep 2024, Palmas - TO",
+      "description": "Collaborated with the projects team, focusing on creating an internet banking platform for clients.\n\nImplemented solutions such as sending money via Pix, QR Code, and bank transfers.\n\nDeveloped features to retrieve bank slips and download PDFs by date (e.g., 10/01 to 20/01).\n\nIntegrated with the Central Bank API to validate bank requests.\n\nIntegrated with the database API to log users in or out and fetch information such as balances, credits, debits, and personal details.\n\nImplemented designs provided by the UI/UX team.\n\nActively participated in planning meetings and defined technical and functional requirements.",
+      "techs": ["HTML", "CSS", "NextJS", "TypeScript", "Tailwindcss", "GIT"]
+    },
+    {
+      "id": 5,
+      "enterprise": "Quick Digital",
+      "position": "Frontend Developer - Remote",
+      "time": "Jun 2024 - Present, Rio de Janeiro",
+      "description": "Collaborated with the projects team, focusing on the enhancement of e-commerce websites.\n\nDeveloped and maintained customized solutions.\n\nImplemented responsive and optimized interfaces for an improved user experience (UX).\n\nFixed bugs and continuously improved to ensure high performance and application stability.\n\nActively participated in planning meetings and defined technical and functional requirements.",
+      "techs": [
+        "HTML",
+        "CSS",
+        "ReactJS",
+        "TypeScript",
+        "SASS",
+        "GIT",
+        "VTEX IO / CMS"
+      ]
+    }
+  ],
+  
+  "titleProject": "Projects",
+  "subTitleProject": "My Projects - GITHUB",
+  "nameOfProject": "Shortly...",
+  "descriptionOfProject": "Grab a cup of coffee, I'm already preparing the project.",
+
+
+
+
+  "copyright": "© Nilo Marcos - All rights reserved"
+}
