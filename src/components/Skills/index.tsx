@@ -59,7 +59,7 @@ export function Skills() {
         ].map((skill, index) => (
           <motion.div
             key={index}
-            className="flex flex-col items-center space-y-2 hover:scale-105 transition-transform"
+            className="flex flex-col items-center space-y-2 hover:scale-105 transition-transform cursor-pointer"
           >
             <motion.div className="border border-white p-3 rounded-full">
               {skill.icon}

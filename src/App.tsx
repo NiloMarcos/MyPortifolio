@@ -14,7 +14,7 @@ import { Footer } from "./components/Footer";
 
 export function App() {
   return (
-    <div className="bg-[url('./src/assets/BackgroundPattern.svg')] bg-no-repeat bg-right">
+    <div className="bg-[url('/BackgroundPattern.svg')] bg-no-repeat bg-right">
       <Header />
       <Hero />
       <AboutMe />

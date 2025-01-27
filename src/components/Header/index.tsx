@@ -56,7 +56,7 @@ export function Header() {
             {menuLinks.map((item) => (
               <li
                 key={item.id}
-                className="border-b-2 border-[#9A9A9A] flex items-center justify-center h-[35px] w-[96px]"
+                className="border-b-2 border-[#9A9A9A] flex items-center justify-center h-[35px] w-[96px] transition-all hover:opacity-[.8]"
               >
                 <a href={item.link} className="text-[13px] font-medium text-[#E1E1E1]">
                   {item.title}
